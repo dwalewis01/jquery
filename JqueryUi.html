@@ -1,0 +1,153 @@
+<html>
+
+    
+    
+    <head>
+        
+        <title> Jquery Ui</title>
+        
+            
+    
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        
+        
+        
+        
+        <style type="text/css">
+            
+            
+            
+            
+            #wrapper-parent {
+                
+                
+                border: 1px solid black;
+                
+                width: 300px;
+                
+                height: 500px;
+                
+                
+                
+                    
+            }
+            
+            .box {
+
+                border: 1px solid black;
+                width : 100px;
+                height: 200px;
+            
+            }
+        
+            #resize { 
+                
+                
+                
+                width: 150px; 
+                height: 150px; 
+               background-color: aqua
+            }
+        
+        
+        
+        
+        </style>
+    
+    
+    
+        
+    </head>
+
+    <body>
+        
+        
+
+    
+        <div id="draggable" >
+        
+        
+
+            <p> drag me  verically </p>
+        
+        
+        </div>
+        
+        
+        <p id="draggable2">  drag me horizontally  </p>
+        
+        
+        
+        <div id="wrapper-parent">
+        
+        
+        
+            <div id="draggable3" class="box"> 
+            
+            
+                <p> i can only be move around our parent </p>
+            
+            
+            
+            
+            </div>
+            
+            
+            <div class="box">
+            
+            
+                <p id="draggable4"> im stuck in a box </p>
+            
+            
+            
+            </div>
+            
+        </div>
+        
+            
+    
+        
+        
+        
+        
+                <div id="resize" class="ui-widget-content">
+</div>
+ 
+       
+    
+    <script type="text/javascript"> 
+    
+        
+            $( "#resize" ).resize();
+    
+        // how to drag items using jquery  verically
+        
+       /* $( "#draggable" ).draggable({ axis: "y" });
+    
+
+        $("#draggable2").draggable( { axis: "x" });
+        
+        
+        $( "#draggable3" ).draggable({ containment: "#wrapper-parent", scroll: false });
+    
+        $( "#draggable4" ).draggable({ containment: "parent" }); */
+        
+        
+        
+    
+    
+    </script>
+    
+    
+    
+ </body>
+
+
+
+
+
+
+
+
+</html>
